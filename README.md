@@ -88,16 +88,26 @@ If your source code is in `/home/atapas/code` and want to exclude `node_modules`
 ## Change the file Types
 To Change the file type, just replace the `*.js` with any other extentions like, `*.java`, `*.cpp` etc.
 
-# Issues and Limitations
+# Limitations
 
 - This tool can only be run from a Linux Bash Shell. For running it from windows use any bash shell like [GitBash](https://git-scm.com/download/win).
-- This tool can only be used with the language files where multi-line comment is allowed with this format, like javascript, java etc.:
+- This tool can be made use different language files like javascript, java, c, c++, html, shell-script etc. However the content of the `copyright.txt` should be changed according to the mult-line comment format. For example,
+
+ For Javascript(.js) or Java(.java) files this is the format:
+ 
   ```js
    /*
     This is a comment
    */
   ```
-  For example, you shouldn't use this tool for `.html` files.
+  
+  For HTML(.htm or .html) file the format should be,
+  
+  ```html
+  <!-- 
+     This is a HTML Comment
+  ->
+ ```
 
 ## Contributors ✨
 
