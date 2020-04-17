@@ -43,6 +43,11 @@ test();
   Where the `<EXCLUDE_DIRECTORY>` is the directory to exclude if it exists under `<SOURCE_CODE_DIRECTIRY>` for updating the Copyright information.
 
 # Usage
+Make sure you have given the execute permission to the `addcopyright.sh` script file. You can provide the permission using following command:
+
+```bash
+chmod +x addcopyright.sh
+```
 
 ## Running it on Source Code without any Exclusions
 For running the tool on the Source code without excluding any folders, use this command:
