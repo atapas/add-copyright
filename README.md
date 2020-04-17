@@ -1,6 +1,6 @@
 # add-copyright
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 This is a **Script to Automate** adding the Copyright text to one or more source files **Recursively**. The Copyright texts get added to the top of the source file. Ice on the Cake is, it doesn't duplicate the copyright text if it is added already!
 
@@ -110,6 +110,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/IAMLEGION98"><img src="https://avatars2.githubusercontent.com/u/20149005?v=4" width="100px;" alt=""/><br /><sub><b>IAMLEGION98</b></sub></a><br /><a href="https://github.com/atapas/add-copyright/commits?author=IAMLEGION98" title="Tests">⚠️</a></td>
     <td align="center"><a href="https://tapasadhikary.com"><img src="https://avatars1.githubusercontent.com/u/3633137?v=4" width="100px;" alt=""/><br /><sub><b>Tapas Adhikary</b></sub></a><br /><a href="https://github.com/atapas/add-copyright/commits?author=atapas" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/prepaka"><img src="https://avatars3.githubusercontent.com/u/38240616?v=4" width="100px;" alt=""/><br /><sub><b>Pradeep Repaka</b></sub></a><br /><a href="https://github.com/atapas/add-copyright/commits?author=prepaka" title="Code">💻</a></td>
   </tr>
 </table>
 
