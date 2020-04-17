@@ -1,21 +1,13 @@
-# add-license-copyright
-This is a **Script to Automate** adding the license or copyright text to one or more source files **Recursively**. The License or the Copyright texts get added to the top of the source file. Ice on the Cake is, it doesn't duplicate the copyright/license text if it is added already!
+# add-copyright
+This is a **Script to Automate** adding the License or Copyright text to one or more source files **Recursively**. The License or the Copyright texts get added to the top of the source file. Ice on the Cake is, it doesn't duplicate the copyright/license text if it is added already!
 
 Here is an example of JavaScript(.js) file.
 
 ```js
 
 /*
- © Copyright 2020 Micro Focus or one of its affiliates.
- * The only warranties for products and services of Micro Focus and its affiliates and licensors
- * (“Micro Focus”) are set forth in the express warranty statements accompanying such products and
- * services. Nothing herein should be construed as constituting an additional warranty. Micro Focus
- * shall not be liable for technical or editorial errors or omissions contained herein. The informa-
- * tion contained herein is subject to change without notice. Contains Confidential Information.
- * Except as specifically indicated otherwise, a valid license is required for possession, use or
- * copying. Consistent with FAR 12.211 and 12.212, Commercial Computer Software, Computer Software
- * Documentation, and Technical Data for Commercial Items are licensed to the U.S. Government under
- * vendor's standard commercial license.
+ © Copyright 2020 tapasadhikary.com or one of its affiliates.
+ * Some Sample Copyright Text
 */
 
 const test = () => {
@@ -27,18 +19,18 @@ test();
 
 # To Run this on your Source Code
 
-- Clone the project. This project comes with a script file called `addlicense.sh` and few test files to test out things before you feel comfortable to try it on your source code.
+- Clone the project. This project comes with a script file called `addcopyright.sh` and few test files to test out things before you feel comfortable to try it on your source code.
 - Browse to the folder where you have cloned the project.
-- Change directory to `add-license-copyright` folder.
+- Change directory to `add-copyright` folder.
 - Open a shell or Gitbash or any unix command supported prompt.
 - Execute this command:
   ```bash
    export COPYRIGHTLEN=`wc -l copyright.txt | cut -f1 -d ' '`
   ```
-  The above command will set some variable value that will be used by the `addlicense.sh` script.
+  The above command will set some variable value that will be used by the `addcopyright.sh` script.
 - Execute the following command to add the copyright/license text from the `copyright.txt` to your source code:
   ```bash
-   find <SOURCE_CODE_DIRECTIRY> -type d -name "<EXCLUDE_DIRECTORY>" -prune -o -name "*.js" -print0 | xargs -0 ./addlicense.sh
+   find <SOURCE_CODE_DIRECTIRY> -type d -name "<EXCLUDE_DIRECTORY>" -prune -o -name "*.js" -print0 | xargs -0 ./addcopyright.sh
   ```
   Where the `<SOURCE_CODE_DIRECTIRY>` is the path of your source code.
   Where the `<EXCLUDE_DIRECTORY>` is the directory to exclude if it exists under `<SOURCE_CODE_DIRECTIRY>` for updating the Copyright information.
@@ -49,25 +41,25 @@ test();
 For running the tool on the Source code without excluding any folders, use this command:
 
 ```bash
-find <SOURCE_CODE_DIRECTIRY>  -name "*.js" -print0 | xargs -0 ./addlicense.sh
+find <SOURCE_CODE_DIRECTIRY>  -name "*.js" -print0 | xargs -0 ./addcopyright.sh
 ```
 - For current directory use `.`(dot)
 - If your source code is in `/home/atapas/code` directory, use the above command as,
   ```bash
-    find <SOURCE_CODE_DIRECTIRY>  -name "*.js" -print0 | xargs -0 ./addlicense.sh
+    find <SOURCE_CODE_DIRECTIRY>  -name "*.js" -print0 | xargs -0 ./addcopyright.sh
   ```
   
 ## Running it on Source Code with Exclusions(Say, node_modules)
 For Running the tool on the Source Code by excluding the folder of your desire(say, node_modules for nodeJs based applications), use this command:
 
   ```bash
-   find /opt/atapas/code -type d -name "node_modules" -prune -o -name "*.js" -print0 | xargs -0 ./addlicense.sh
+   find /opt/atapas/code -type d -name "node_modules" -prune -o -name "*.js" -print0 | xargs -0 ./addcopyright.sh
   ```
 ### Excluding multiple directories(Say, node_modules and test)
 If your source code is in `/home/atapas/code` and want to exclude `node_modules` and `test` directories, use the above command as,
      
   ```bash
-     find /opt/atapas/code -type d -name "node_modules" -prune -o -type d -name "test" -prune -o -name "*.js" -print0 | xargs -0 ./addlicense.sh
+     find /opt/atapas/code -type d -name "node_modules" -prune -o -type d -name "test" -prune -o -name "*.js" -print0 | xargs -0 ./addcopyright.sh
   ```
 
 ## Change the file Types
