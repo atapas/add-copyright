@@ -106,7 +106,7 @@ To Change the file type, just replace the `*.js` with any other extentions like,
 	  ```html
 	  <!-- 
 	     This is a HTML Comment
-	  ->
+	  -->
 	  ```
 
 ## Contributors ✨
