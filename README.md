@@ -48,7 +48,15 @@ Make sure you have given the execute permission to the `addcopyright.sh` script 
 ```bash
 chmod +x addcopyright.sh
 ```
-
+If your user is not having root privileges, add your $USER to 'roots' group using command :
+```bash
+useradd -m -G root $USER
+```
+Alternatively: <br/>
+Insert 'sudo' when executing the run command. For example:
+```bash
+ sudo find <SOURCE_CODE_DIRECTIRY> -type d -name "<EXCLUDE_DIRECTORY>" -prune -o -name "*.js" -print0 | sudo xargs -0 ./addcopyright.sh
+```
 ## Running it on Source Code without any Exclusions
 For running the tool on the Source code without excluding any folders, use this command:
 
