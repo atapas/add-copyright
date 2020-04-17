@@ -33,10 +33,10 @@ test();
 - Open a shell or Gitbash or any unix command supported prompt.
 - Execute this command:
   ```bash
-   export LICENSELEN=`wc -l license.txt | cut -f1 -d ' '`
+   export COPYRIGHTLEN=`wc -l copyright.txt | cut -f1 -d ' '`
   ```
   The above command will set some variable value that will be used by the `addlicense.sh` script.
-- Execute the following command to add the copyright/license text from the `license.txt` to your source code:
+- Execute the following command to add the copyright/license text from the `copyright.txt` to your source code:
   ```bash
    find <SOURCE_CODE_DIRECTIRY> -type d -name "<EXCLUDE_DIRECTORY>" -prune -o -name "*.js" -print0 | xargs -0 ./addlicense.sh
   ```
