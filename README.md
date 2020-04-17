@@ -1,4 +1,7 @@
 # add-copyright
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 This is a **Script to Automate** adding the Copyright text to one or more source files **Recursively**. The Copyright texts get added to the top of the source file. Ice on the Cake is, it doesn't duplicate the copyright text if it is added already!
 
 Note: The same tool can be used to add any such text blocks like, License, File level Comments etc.
@@ -95,3 +98,22 @@ To Change the file type, just replace the `*.js` with any other extentions like,
    */
   ```
   For example, you shouldn't use this tool for `.html` files.
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/IAMLEGION98"><img src="https://avatars2.githubusercontent.com/u/20149005?v=4" width="100px;" alt=""/><br /><sub><b>IAMLEGION98</b></sub></a><br /><a href="https://github.com/atapas/add-copyright/commits?author=IAMLEGION98" title="Tests">⚠️</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
