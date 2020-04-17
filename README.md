@@ -1,5 +1,7 @@
 # add-copyright
-This is a **Script to Automate** adding the License or Copyright text to one or more source files **Recursively**. The License or the Copyright texts get added to the top of the source file. Ice on the Cake is, it doesn't duplicate the copyright/license text if it is added already!
+This is a **Script to Automate** adding the Copyright text to one or more source files **Recursively**. The Copyright texts get added to the top of the source file. Ice on the Cake is, it doesn't duplicate the copyright text if it is added already!
+
+Note: The same tool can be used to add any such text blocks like, License, File level Comments etc.
 
 Here is an example of JavaScript(.js) file.
 
