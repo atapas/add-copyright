@@ -1,6 +1,7 @@
 # add-copyright
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fatapas%2Fadd-copyright.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fatapas%2Fadd-copyright?ref=badge_shield)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 This is a **Script to Automate** adding the Copyright text to one or more source files **Recursively**. The Copyright texts get added to the top of the source file. Ice on the Cake is, it doesn't duplicate the copyright text if it is added already!
 
@@ -129,3 +130,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fatapas%2Fadd-copyright.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fatapas%2Fadd-copyright?ref=badge_large)
