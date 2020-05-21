@@ -94,21 +94,23 @@ To Change the file type, just replace the `*.js` with any other extentions like,
 - This tool can only be run from a Linux Bash Shell. For running it from windows use any bash shell like [GitBash](https://git-scm.com/download/win).
 - This tool can be made use for different language files like javascript, java, c, c++, html, shell-script etc. However the content of the `copyright.txt` should be changed according to the mult-line comment format. For example,
 
-     For Javascript(.js) or Java(.java) files this is the format:
+ For Javascript(.js) or Java(.java) files this is the format:
  
-	  ```js
-	   /*
-	    This is a comment
-	   */
-	  ```
+ ```js
+	  
+   /*
+    This is a comment
+   */
+  ```
   
-     For HTML(.htm or .html) file the format should be,
+  For HTML(.htm or .html) file the format should be,
   
-	  ```html
-	  <!-- 
-	     This is a HTML Comment
-	  -->
-	  ```
+  ```html
+	  
+  <!-- 
+     This is a HTML Comment
+  -->
+  ```
 
 ## Contributors ✨
 
