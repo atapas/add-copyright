@@ -111,6 +111,12 @@ To Change the file type, just replace the `*.js` with any other extentions like,
      This is a HTML Comment
   -->
   ```
+  
+## Credit
+
+The soution was found as part of this discussion on the StackOverflow and keep improving thereafter!
+
+- https://stackoverflow.com/questions/151677/tool-for-adding-license-headers-to-source-files
 
 ## Contributors ✨
 
