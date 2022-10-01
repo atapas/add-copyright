@@ -30,7 +30,7 @@ test();
 
 # To Run this on your Source Code
 
-- Clone the project. This project comes with a script file called `addcopyright.sh` and few test files to test out things before you feel comfortable to try it on your source code.
+- Clone the project. This project comes with a script file called `addcopyright.sh` and few test files to test out things before you feel comfortable to try it on your Source Code.
 - Browse to the folder where you have cloned the project.
 - Change directory to `add-copyright` folder.
 - Open a shell or Gitbash or any unix command supported prompt.
@@ -39,11 +39,11 @@ test();
    export COPYRIGHTLEN=`wc -l copyright.txt | cut -f1 -d ' '`
   ```
   The above command will set some variable value that will be used by the `addcopyright.sh` script.
-- Execute the following command to add the copyright/license text from the `copyright.txt` to your source code:
+- Execute the following command to add the copyright/license text from the `copyright.txt` to your Source Code:
   ```bash
    find <SOURCE_CODE_DIRECTIRY> -type d -name "<EXCLUDE_DIRECTORY>" -prune -o -name "*.js" -print0 | xargs -0 ./addcopyright.sh
   ```
-  Where the `<SOURCE_CODE_DIRECTIRY>` is the path of your source code.
+  Where the `<SOURCE_CODE_DIRECTIRY>` is the path of your Source Code.
   Where the `<EXCLUDE_DIRECTORY>` is the directory to exclude if it exists under `<SOURCE_CODE_DIRECTIRY>` for updating the Copyright information.
 
 # Usage
@@ -62,13 +62,13 @@ Insert 'sudo' when executing the run command. For example:
  sudo find <SOURCE_CODE_DIRECTIRY> -type d -name "<EXCLUDE_DIRECTORY>" -prune -o -name "*.js" -print0 | sudo xargs -0 ./addcopyright.sh
 ```
 ## Running it on Source Code without any Exclusions
-For running the tool on the Source code without excluding any folders, use this command:
+For running the tool on the Source Code without excluding any folders, use this command:
 
 ```bash
 find <SOURCE_CODE_DIRECTIRY>  -name "*.js" -print0 | xargs -0 ./addcopyright.sh
 ```
 - For current directory use `.`(dot)
-- If your source code is in `/home/atapas/code` directory, use the above command as,
+- If your Source Code is in `/home/atapas/code` directory, use the above command as,
   ```bash
     find <SOURCE_CODE_DIRECTIRY>  -name "*.js" -print0 | xargs -0 ./addcopyright.sh
   ```
@@ -80,7 +80,7 @@ For Running the tool on the Source Code by excluding the folder of your desire(s
    find /opt/atapas/code -type d -name "node_modules" -prune -o -name "*.js" -print0 | xargs -0 ./addcopyright.sh
   ```
 ### Excluding multiple directories(Say, node_modules and test)
-If your source code is in `/home/atapas/code` and want to exclude `node_modules` and `test` directories, use the above command as,
+If your Source Code is in `/home/atapas/code` and want to exclude `node_modules` and `test` directories, use the above command as,
      
   ```bash
      find /opt/atapas/code -type d -name "node_modules" -prune -o -type d -name "test" -prune -o -name "*.js" -print0 | xargs -0 ./addcopyright.sh
