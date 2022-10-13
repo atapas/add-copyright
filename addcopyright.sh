@@ -16,8 +16,7 @@ fi
 
 find "${WORKDIR}" -type f -not -path "./.git/*" -print0 | while IFS= read -r -d '' file_name
 do
-    isTextFile=$(file --no-buffer -i "${file_name}"  )
-    echo " Found ${file_name} which has ${isTextFile} "
+    isTextFile=$(file --no-buffer -i "${file_name}" )
     if [[ "${isTextFile}" =~ ".* text/plain;.*" ]];
     then
         echo "${file_name} skipped (not text),"
