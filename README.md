@@ -87,7 +87,7 @@ If your source code is in `/home/atapas/code` and want to exclude `node_modules`
   ```
 
 ## Change the file Types
-To Change the file type, just replace the `*.js` with any other extentions like, `*.java`, `*.cpp` etc.
+To Change the file type, just replace the `*.js` with any other extensions like, `*.java`, `*.cpp` etc.
 
 # Limitations
 
@@ -114,7 +114,7 @@ To Change the file type, just replace the `*.js` with any other extentions like,
   
 ## Credit
 
-The soution was found as part of this discussion on the StackOverflow and keep improving thereafter!
+The solution was found as part of this discussion on the StackOverflow and keep improving thereafter!
 
 - https://stackoverflow.com/questions/151677/tool-for-adding-license-headers-to-source-files
 
