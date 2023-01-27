@@ -3,11 +3,11 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fatapas%2Fadd-copyright.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fatapas%2Fadd-copyright?ref=badge_shield)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-This is a **Script to Automate** adding the Copyright text to one or more source files **Recursively**. The Copyright texts get added to the top of the source file. Ice on the Cake is, it doesn't duplicate the copyright text if it is added already!
+This is a **script to automate** adding the copyright text to one or more source files **recursively**. The copyright text get added to the top of the source file. It doesn't duplicate the copyright text if it is already present.
 
-Note: The same tool can be used to add any such text blocks like, License, File level Comments etc.
+Note: The same tool can be used to add any such text blocks like, license, file-level comments, etc.
 
-Here is an example of JavaScript(.js) file.
+Here is an example of JavaScript (.js) file.
 
 ```js
 
@@ -28,12 +28,12 @@ const test = () => {
 test();
 ```
 
-# To Run this on your Source Code
+# To run this on your source code
 
 - Clone the project. This project comes with a script file called `addcopyright.sh` and few test files to test out things before you feel comfortable to try it on your source code.
 - Browse to the folder where you have cloned the project.
 - Change directory to `add-copyright` folder.
-- Open a shell or Gitbash or any unix command supported prompt.
+- Open a shell.
 - Execute this command:
   ```bash
    export COPYRIGHTLEN=`wc -l copyright.txt | cut -f1 -d ' '`
@@ -44,57 +44,49 @@ test();
    find <SOURCE_CODE_DIRECTIRY> -type d -name "<EXCLUDE_DIRECTORY>" -prune -o -name "*.js" -print0 | xargs -0 ./addcopyright.sh
   ```
   Where the `<SOURCE_CODE_DIRECTIRY>` is the path of your source code.
-  Where the `<EXCLUDE_DIRECTORY>` is the directory to exclude if it exists under `<SOURCE_CODE_DIRECTIRY>` for updating the Copyright information.
+  Where the `<EXCLUDE_DIRECTORY>` is the directory to exclude if it exists under `<SOURCE_CODE_DIRECTIRY>` for updating the copyright information.
 
 # Usage
-Make sure you have given the execute permission to the `addcopyright.sh` script file. You can provide the permission using following command:
+Make sure you give the execute permission to the `addcopyright.sh` script file. You can provide the permission with this command:
 
 ```bash
 chmod +x addcopyright.sh
 ```
-If your user is not having root privileges, add your $USER to 'roots' group using command :
-```bash
-useradd -m -G root $USER
-```
-Alternatively: <br/>
-Insert 'sudo' when executing the run command. For example:
-```bash
- sudo find <SOURCE_CODE_DIRECTIRY> -type d -name "<EXCLUDE_DIRECTORY>" -prune -o -name "*.js" -print0 | sudo xargs -0 ./addcopyright.sh
-```
-## Running it on Source Code without any Exclusions
-For running the tool on the Source code without excluding any folders, use this command:
+
+## Running it on source code without any exclusions
+For running the tool on the source code without excluding any folders, use this command:
 
 ```bash
-find <SOURCE_CODE_DIRECTIRY>  -name "*.js" -print0 | xargs -0 ./addcopyright.sh
+find <SOURCE_CODE_DIRECTORY>  -name "*.js" -print0 | xargs -0 ./addcopyright.sh
 ```
 - For current directory use `.`(dot)
 - If your source code is in `/home/atapas/code` directory, use the above command as,
   ```bash
-    find <SOURCE_CODE_DIRECTIRY>  -name "*.js" -print0 | xargs -0 ./addcopyright.sh
+    find <SOURCE_CODE_DIRECTORY>  -name "*.js" -print0 | xargs -0 ./addcopyright.sh
   ```
   
-## Running it on Source Code with Exclusions(Say, node_modules)
-For Running the tool on the Source Code by excluding the folder of your desire(say, node_modules for nodeJs based applications), use this command:
+## Running it on source code with exclusions (say, node_modules)
+For running the tool on the source code and exclude a folder (say, node_modules for Node.js-based applications), use this command:
 
   ```bash
    find /opt/atapas/code -type d -name "node_modules" -prune -o -name "*.js" -print0 | xargs -0 ./addcopyright.sh
   ```
-### Excluding multiple directories(Say, node_modules and test)
-If your source code is in `/home/atapas/code` and want to exclude `node_modules` and `test` directories, use the above command as,
+### Excluding multiple directories (say, node_modules and test)
+If your source code is in `/home/atapas/code` and want to exclude `node_modules` and `test` directories, use this command:
      
   ```bash
      find /opt/atapas/code -type d -name "node_modules" -prune -o -type d -name "test" -prune -o -name "*.js" -print0 | xargs -0 ./addcopyright.sh
   ```
 
-## Change the file Types
+## Change the file types
 To Change the file type, just replace the `*.js` with any other extentions like, `*.java`, `*.cpp` etc.
 
 # Limitations
 
-- This tool can only be run from a Linux Bash Shell. For running it from windows use any bash shell like [GitBash](https://git-scm.com/download/win).
-- This tool can be made use for different language files like javascript, java, c, c++, html, shell-script etc. However the content of the `copyright.txt` should be changed according to the mult-line comment format. For example,
+- This tool can only be run from a Bash Shell. To run it from Windows use any bash shell like [GitBash](https://git-scm.com/download/win).
+- This tool can be made use for different language files like JavaScirpt, Java, C, C++, HTML, shell script, etc. However the content of the `copyright.txt` should be changed according to the mult-line comment format needed. For example,
 
-  For Javascript(.js) or Java(.java) files this is the format:
+  For JavaScript (.js) or Java (.java) files, this is the format:
  
   ```js
 	  
@@ -103,7 +95,7 @@ To Change the file type, just replace the `*.js` with any other extentions like,
    */
    ```
   
-  For HTML(.htm or .html) file the format should be,
+  For HTML (.htm or .html) files, this is the format:
   
   ```html
 	  
@@ -114,9 +106,7 @@ To Change the file type, just replace the `*.js` with any other extentions like,
   
 ## Credit
 
-The soution was found as part of this discussion on the StackOverflow and keep improving thereafter!
-
-- https://stackoverflow.com/questions/151677/tool-for-adding-license-headers-to-source-files
+The soution was found as part of [this discussion on the Stack Overflow](https://stackoverflow.com/questions/151677/tool-for-adding-license-headers-to-source-files) and keep improving.
 
 ## Contributors ✨
 
